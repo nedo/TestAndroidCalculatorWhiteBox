@@ -25,7 +25,7 @@ public class TestMain extends ActivityInstrumentationTestCase2<Main> {
 		//Defining our own values to multiply
 		float vFirstNumber = 10;
 		float vSecondNumber = 20;
-		float vResutl = vFirstNumber * vSecondNumber ;
+		float vResutl = vFirstNumber * vSecondNumber;
 		
 		//Access First value (edit-filed) and putting firstNumber value in it
 		EditText vFirstEditText = (EditText) solo.getView(R.id.EditText01);
@@ -37,7 +37,7 @@ public class TestMain extends ActivityInstrumentationTestCase2<Main> {
 		solo.clearEditText(vSecondEditText);
 		solo.enterText(vSecondEditText, String.valueOf(vSecondNumber));
 		
-		//Click on Multiply button
+		//Tap on Multiply button
 		solo.clickOnButton("Multiply");
 		
 		assertTrue(solo.searchText(String.valueOf(vResutl)));				
